@@ -34,7 +34,7 @@ export default class FkUserAgentPlugin implements FlutterPlugin, MethodCallHandl
 
   onMethodCall(call: MethodCall, result: MethodResult): void {
     if (call.method == "getProperties") {
-
+      this.getProperties(call, result);
     } else {
       result.notImplemented()
     }
